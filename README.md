@@ -8,7 +8,8 @@ My configurations for CS:GO, and also for [EqualizerAPO](https://sourceforge.net
 ```batch
 net stop audiosrv && net start audiosrv
 ```
-2. Run `script.bat` to automatically apply all the configs and mods.
+2. Make sure Steam is running
+3. Run `script.bat` to automatically apply all the configs and mods.
 
 ## Current setup
 ### Gaming gear
