@@ -40,7 +40,7 @@ start /w net stop audiosrv
 start /w net start audiosrv
 
 echo --- LAUNCH OPTIONS ---
-echo 128 tick: +exec autoexec.cfg -high -novid -nojoy -preload -language colormod -freq 240 -tickrate 128
-echo 64 tick: +exec autoexec.cfg -high -novid -nojoy -preload -language colormod -freq 240 -tickrate 64
+echo 128 tick: +exec autoexec.cfg -high -novid -nojoy -language colormod -freq 240 -tickrate 128
+echo 64 tick: +exec autoexec.cfg -high -novid -nojoy -language colormod -freq 240 -tickrate 64
 echo --- END ---
 pause
