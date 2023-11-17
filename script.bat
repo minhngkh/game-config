@@ -7,16 +7,11 @@ for /f "skip=1delims=" %%a in ('wmic process where name^="steam.exe" get Executa
     goto next
 )
 :next
-set csgo=%path%steamapps\common\Counter-Strike Global Offensive\csgo
-if not exist "%csgo%" (echo Can't find path, make sure Steam is running && goto skip)
+set cs2_path=%path%steamapps\common\Counter-Strike Global Offensive\game\csgo\
+if not exist "%cs2_path%" (echo Can't find path, make sure Steam is running && goto skip)
 
 echo Adding config files...
-copy "*.cfg" "%csgo%\cfg\" > NUL
-echo Applying colormod...
-copy "colormod\*" "%csgo%\resource\" > NUL
-echo Applying Simple Radar...
-copy "Simple Radar\01 default\*" "%csgo%\resource\overviews\" > NUL
-copy "Simple Radar\02 spectate\*" "%csgo%\resource\overviews\" > NUL
+copy "*.cfg" "%cs2_path%\cfg\" > NUL
 
 :skip
 if exist "eapo.exe" (goto installed)
@@ -36,11 +31,10 @@ echo Applying EqualizerAPO config...
 copy "EqualizerAPO\config.txt" "%eapo%\config.txt" > NUL
 
 echo Restarting audio server
-start /w net stop audiosrv
+start /w net stop audiosrvs
 start /w net start audiosrv
 
 echo --- LAUNCH OPTIONS ---
-echo 128 tick: +exec autoexec.cfg -high -novid -nojoy -language colormod -freq 240 -tickrate 128
-echo 64 tick: +exec autoexec.cfg -high -novid -nojoy -language colormod -freq 240 -tickrate 64
+echo +exec autoexec.cfg -high -nojoy
 echo --- END ---
 pause

@@ -1,7 +1,5 @@
 # csgo-config
-My configurations for CS:GO, and also for [EqualizerAPO](https://sourceforge.net/projects/equalizerapo/) to eq the headset. This also includes CS:GO mods like:
-- [Text Color Mod](https://maximhere.me/modifications/)
-- [Simple Radar](https://readtldr.gg/simpleradar-bananagaming)
+My configurations for CS2, and also for [EqualizerAPO](https://sourceforge.net/projects/equalizerapo/) to eq the headset.
 
 ## How to use
 1. Make sure Steam is running
@@ -20,12 +18,3 @@ My configurations for CS:GO, and also for [EqualizerAPO](https://sourceforge.net
 
 ### Video settings
 1440x1080 - 4:3 stretched
-
-| Setting | Value |
-| --- | :---: |
-| Global Shadow Quality | Medium |
-| Model / Texture Detail | Medium |
-| Effect Detail | High |
-| Shader Detail | Very High |
-| Multisampling Anti-Aliasing Mode | 4x |
-| Texture Filtering Mode | 4x |
