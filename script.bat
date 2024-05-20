@@ -16,7 +16,7 @@ copy "*.cfg" "%cs2_path%\cfg\" > NUL
 :skip
 if exist "eapo.exe" (goto installed)
 
-set exe=https://onboardcloud.dl.sourceforge.net/project/equalizerapo/1.3/EqualizerAPO64-1.3.exe
+set exe=https://onboardcloud.dl.sourceforge.net/project/equalizerapo/1.3.2/EqualizerAPO64-1.3.2.exe
 echo Downloading EqualizerAPO
 start /w curl -o eapo.exe "%exe%"
 
