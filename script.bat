@@ -1,5 +1,5 @@
 @echo off
-echo --- CSGO CONFIG ---
+echo --- GAME CONFIG ---
 echo Finding csgo's config directory...
 
 for /f "skip=1delims=" %%a in ('wmic process where name^="steam.exe" get ExecutablePath') do (
@@ -16,7 +16,7 @@ copy "*.cfg" "%cs2_path%\cfg\" > NUL
 :skip
 if exist "eapo.exe" (goto installed)
 
-set exe=https://onboardcloud.dl.sourceforge.net/project/equalizerapo/1.3.2/EqualizerAPO64-1.3.2.exe
+set exe=https://webwerks.dl.sourceforge.net/project/equalizerapo/1.3.2/EqualizerAPO64-1.3.2.exe?viasf=1
 echo Downloading EqualizerAPO
 start /w curl -o eapo.exe "%exe%"
 
